@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-map-solver</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <h1>K-Map Solver</h1>
+    <label for="numVariables">Number of Variables:</label>
+    <select id="numVariables" name="Variables">
+        <option value="" selected disabled>Select variables</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <label for="Minterms">Enter Minterms:</label>
+    <input type="text" id="Minterms" placeholder="Enter Minterms  0,2,3,5...">
+    <button id="generateBtn">Generate K-map</button>
+    <script src="script.js"></script>
+</body>
+</html>
