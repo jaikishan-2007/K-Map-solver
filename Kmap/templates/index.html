@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-map-solver</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
 
 </head>
 <body>
@@ -20,6 +19,6 @@
     <label for="Minterms">Enter Minterms:</label>
     <input type="text" id="Minterms" placeholder="Enter Minterms  0,2,3,5...">
     <button id="generateBtn">Generate K-map</button>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

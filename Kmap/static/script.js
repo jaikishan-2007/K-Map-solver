@@ -34,11 +34,31 @@ btn.addEventListener("click",function(){
     console.log(Variable_select_number);
 
   const isValidVariables = validateVariables(Variable_select_number);
-  const isValidMinterms = validateMinterms(uniqueMinterms, Variable_select_number);
+const isValidMinterms = validateMinterms(uniqueMinterms, Variable_select_number);
 
-  if (!isValidVariables || !isValidMinterms) {
-    return;// program will not continue if the either of input are invalid
- }
+console.log("Variables valid:", isValidVariables);
+console.log("Minterms valid:", isValidMinterms);
+
+if (!isValidVariables || !isValidMinterms) {
+    return;
+}
+
+console.log("Validation passed");
+
+fetch("/generate", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        variables: Variable_select_number,
+        minterms: uniqueMinterms
+    })
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+});
 
 });
 
