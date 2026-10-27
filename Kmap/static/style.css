@@ -85,3 +85,34 @@ th {
     color: #777777;
     font-size: 13px;
 }
+/* Mobile responsive alignment */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 92%;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+
+    input,
+    select {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+    }
+
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
