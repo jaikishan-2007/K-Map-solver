@@ -1,0 +1,87 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* Main heading */
+h1 {
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* Input and dropdown */
+select,
+input {
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Generate button */
+button {
+    padding: 9px 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message */
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+/* K-map result */
+#kmapResult {
+    margin-top: 25px;
+}
+
+/* K-map table */
+table {
+    margin: 15px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 12px 18px;
+    text-align: center;
+}
+
+th {
+    background-color: #e6e6e6;
+}
+
+/* Boolean expression */
+#kmapResult p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+}

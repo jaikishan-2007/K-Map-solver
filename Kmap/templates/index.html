@@ -18,7 +18,15 @@
     </select>
     <label for="Minterms">Enter Minterms:</label>
     <input type="text" id="Minterms" placeholder="Enter Minterms  0,2,3,5...">
+    <label for="dontCares">Enter Don't Cares:</label>
+    <input type="text" id="dontCares" placeholder="Enter Don't Cares (optional)">
     <button id="generateBtn">Generate K-map</button>
+    <div id="kmapResult"></div>
+    <p id="errorMessage" style="color: red;"></p>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+<footer class="footer">
+    Made by JK
+</footer>
 </html>
